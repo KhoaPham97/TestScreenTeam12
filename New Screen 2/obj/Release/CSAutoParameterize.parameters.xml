@@ -6,4 +6,7 @@
   <parameter name="DemoTeam12Entities-Web.config Connection String" description="DemoTeam12Entities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=tcp:demoteam12.database.windows.net;initial catalog=DemoTeam12;user id=team12;password=sa123456@;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="E:\\Work\\TestScreenTeam12\\New\ Screen\ 2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DemoTeam12Entities']/@connectionString" />
   </parameter>
+  <parameter name="team12Entities-Web.config Connection String" description="team12Entities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/Models.Model1.csdl|res://*/Models.Model1.ssdl|res://*/Models.Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=team12.database.windows.net;initial catalog=team12;user id=team12;password=sa123456@;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="E:\\Work\\TestScreenTeam12\\New\ Screen\ 2\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='team12Entities']/@connectionString" />
+  </parameter>
 </parameters>

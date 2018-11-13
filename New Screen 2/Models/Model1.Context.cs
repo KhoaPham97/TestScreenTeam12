@@ -13,10 +13,10 @@ namespace New_Screen_2.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DemoTeam12Entities : DbContext
+    public partial class team12Entities : DbContext
     {
-        public DemoTeam12Entities()
-            : base("name=DemoTeam12Entities")
+        public team12Entities()
+            : base("name=team12Entities")
         {
         }
     

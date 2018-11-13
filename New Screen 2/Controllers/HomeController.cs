@@ -8,7 +8,7 @@ namespace New_Screen_2.Controllers
 {
     public class HomeController : Controller
     {
-        DemoTeam12Entities db = new DemoTeam12Entities();
+       
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="DemoTeam12ModelStoreContainer" CdmEntityContainer="DemoTeam12Entities">
+  <EntityContainerMapping StorageEntityContainer="team12ModelStoreContainer" CdmEntityContainer="team12Entities">
     <EntitySetMapping Name="Users">
-      <EntityTypeMapping TypeName="DemoTeam12Model.User">
+      <EntityTypeMapping TypeName="team12Model.User">
         <MappingFragment StoreEntitySet="User">
           <ScalarProperty Name="Username" ColumnName="Username" />
           <ScalarProperty Name="Password" ColumnName="Password" />
@@ -12,7 +12,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="database_firewall_rules">
-      <EntityTypeMapping TypeName="DemoTeam12Model.database_firewall_rules">
+      <EntityTypeMapping TypeName="team12Model.database_firewall_rules">
         <MappingFragment StoreEntitySet="database_firewall_rules">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />

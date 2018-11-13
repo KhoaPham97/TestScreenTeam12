@@ -10,7 +10,7 @@ namespace New_Screen_2.Controllers
     {
         //
         // GET: /Account/
-        DemoTeam12Entities db = new DemoTeam12Entities();
+        team12Entities db = new team12Entities();
         public ActionResult Index()
         {
             return View();

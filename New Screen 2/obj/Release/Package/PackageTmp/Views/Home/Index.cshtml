@@ -4,11 +4,12 @@
 
 @using New_Screen_2.Models;
 
-@model New_Screen_2.Models.User
+
 @{
    
     var db = new team12Entities();
 }
+@model IEnumerable<New_Screen_2.Models.team12Entities>
 
 
     <!DOCTYPE HTML>
@@ -340,7 +341,7 @@
                             <li class="dropdown user user-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="../area/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                                    <span class="hidden-xs"></span>
+                                    <span class="hidden-xs">@Session["Username"]</span>
                                 </a>
                               
                                 <ul class="dropdown-menu">
@@ -349,7 +350,7 @@
                                         <img src="../area/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                                         <p>
-                                        
+                                        @Session["Username"]
                                             <small>Member since Nov. 2012</small>
                                         </p>
                                     </li>

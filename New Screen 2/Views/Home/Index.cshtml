@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="../area/bower_components/bootstrap/dist/css/bootstrap.min.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="../area/bower_components/font-awesome/css/font-awesome.min.css">
-        <!-- Ionicons -->
+<!-- Ionicons -->
         <link rel="stylesheet" href="../area/bower_components/Ionicons/css/ionicons.min.css">
         <!-- Theme style -->
         <link rel="stylesheet" href="../area/dist/css/AdminLTE.min.css">
@@ -51,63 +51,70 @@
         <![endif]-->
         <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-        <style>
-            .stretch-card {
-                display: -webkit-flex;
-                display: flex;
-                -webkit-align-items: stretch;
-                align-items: stretch;
-                -webkit-justify-content: stretch;
-                justify-content: stretch;
-            }
-
-            .grid-margin, .purchase-popup {
-                margin-bottom: 2.5rem;
-            }
-
-            .bg-gradient-danger {
-                background: linear-gradient(to right, #ffbf96, #fe7096);
-            }
-
-            .card.card-img-holder {
-                position: relative;
-            }
-
-            .stretch-card > .card {
-                width: 100%;
-                min-width: 100%;
-            }
-
+        <style type="text/css">
             .card {
-                border: 0;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
+
+                .card .card-subtitle {
+                    font-weight: 300;
+                    margin-bottom: 15px;
+                    color: #6c757d;
+                }
+
+                .card .card-title {
+                    position: relative;
+                    font-weight: 500;
+                }
+
+                .card .card-actions {
+                    float: right;
+                }
+
+                    .card .card-actions a {
+                        padding: 0 5px;
+                        cursor: pointer;
+                    }
+
+            .card-header {
+                padding: 0.75rem 1.25rem;
+                margin-bottom: 0;
+                background-color: rgba(0, 0, 0, 0.03);
+                border-bottom: 0px solid transparent;
+            }
+
+                .card-header:first-child {
+                    border-radius: calc(0px - 0px) calc(0px - 0px) 0 0;
+                }
+
+                .card-header + .list-group .list-group-item:first-child {
+                    border-top: 0;
+                }
+
+            .card-body {
+                flex: 1 1 auto;
+                padding: 1.25rem;
+            }
+
+            .card-title {
+                margin-bottom: 0.75rem;
+            }
+
+            .bg-warning {
+                background-color: #FEC109;
+            }
+
+            .bg-primary {
+                background-color: #03a9f3;
+            }
+
+            .bg-success {
+                background-color: #00c292;
             }
 
             .text-white {
-                color: #ffffff !important;
-            }
-
-            .card {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                min-width: 0;
-                word-wrap: break-word;
-                background-color: #fff;
-                background-clip: border-box;
-                border: 1px solid rgba(0, 0, 0, 0.125);
-                border-radius: 0.3125rem;
-            }
-
-            .bg-gradient-info {
-                background: linear-gradient(to right, #90caf9, #047edf 99%);
-            }
-
-            .bg-gradient-success {
-                background: linear-gradient(to right, #84d9d2, #07cdae);
-            }
-
-            .bg-btn {
-                border-radius: 3px;
+                color: #fff !important;
             }
         </style>
     </head>
@@ -444,170 +451,161 @@
                 <!-- Main content -->
                 <!-- Main content -->
                 <section class="content">
-                    <!-- Small boxes (Stat box) -->
-                    <!-- /.row -->
-                    <!-- Main row -->
                     <div class="row">
 
-                        <div class="col-lg-4   col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-aqua-active " style="border-radius:15px">
-                                <div class="inner">
-                                    <h3 style="  font-family:'Myriad Pro';font-weight: 400;color:black ">Plan:20</h3>
-
-                                </div>
-
-                                <!-- Single button -->
-                                <select class="form-control" style="border-radius:15px">
-                                    <option>Plan A</option>
-                                    <option>option 2</option>
-                                    <option>option 3</option>
-                                    <option>option 4</option>
-                                    <option>option 5</option>
-                                </select>
-                                <button type="button" class="btn btn-default " style="float:right;margin-top:40px;border-radius:15px">
-                                    Add <i class="fa fa-plus"></i>
-                                </button>
-                                <br><br><br>
-
-                                <br>
-
-                            </div>
-
-                        </div>
 
                         <!-- ./col -->
-                        <div class="col-lg-4 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-green" style="border-radius:15px">
-                                <div class="inner">
-                                    <h3 style="  font-family:'Myriad Pro';font-weight: 400;color:black ">Bucket:10</h3>
-
-                                </div>
-                                <select class="form-control" style="border-radius:15px">
-                                    <option>Bucket A</option>
-                                    <option>option 2</option>
-                                    <option>option 3</option>
-                                    <option>option 4</option>
-                                    <option>option 5</option>
-                                </select>
-                                <button type="button" class="btn btn-default " style="float:right ;margin-top:40px;border-radius:15px">
-                                    Add <i class="fa fa-plus"></i>
-                                </button>
-                                <br><br><br>
-
-                                <br>
-
-
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-lg-4 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-yellow" style="border-radius:15px">
-                                <div class="inner">
-                                    <h3 style="  font-family: 'Myriad Pro';font-weight: 400;color:black ">Task:10</h3>
-                                    <div class="box-body table-responsive no-padding">
-                                        <table class="table table-hover" style="color:black">
-                                            <tr>
-                                                <th>Planned</th>
-                                                <th>In Prorgess</th>
-                                                <th>Closed</th>
-                                                <th>Delay</th>
-
-                                            </tr>
-                                            <tr>
-                                                <td>20</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>0</td>
-
-                                            </tr>
-
-                                        </table>
-                                    </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card text-white bg-success">
+                                <div class="card-header">
+                                    <h3 class="m-b-0 text-white">PLAN:10  <a class="btn btn-default" style="float: right;">Add  <i class="fa fa-plus"></i></a></h3>
                                 </div>
 
-                                <button type="button" class="btn btn-default " style="float:right;margin-bottom:20px;border-radius:15px">
-                                    Add <i class="fa fa-plus"></i>
-                                </button>
-                                <br><br>
+                                <div class="card-body">
 
+                                    <h3 class="card-title">
+                                        <select class="form-control" style="border-radius:5px">
+                                            <option>Plan A</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                            <option>option 5</option>
+                                        </select>
+
+
+
+                                    </h3>
+
+
+                                </div>
                             </div>
                         </div>
 
-                    </div>
-                    <!-- /.row -->
-                    <!-- Main row -->
-
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="box">
-                                <div class="box-header">
-                                    <h3 class="box-title">All Tasks</h3>
-
-                                    <div class="box-tools">
-                                        <div class="input-group input-group-sm" style="width: 150px;">
 
 
 
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card text-white bg-primary">
+                                <div class="card-header">
+                                    <h3 class="m-b-0 text-white">BUCKET:10   <a class="btn btn-default" style="float: right;">Add <i class="fa fa-plus"></i> </a></h3>
+                                </div>
+                                <div class="card-body">
+
+                                    <h3 class="card-title">
+                                        <select class="form-control" style="border-radius:5px;">
+                                            <option>Bucket A</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                            <option>option 5</option>
+                                        </select>
+
+
+                                    </h3>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 col-md-4">
+                            <div class="card text-white bg-warning">
+                                <div class="card-header">
+                                    <h3 class="m-b-0 text-white">TASK:10  <a class="btn btn-default" style="float: right;">Add <i class="fa fa-plus"></i></a></h3>
+                                </div>
+
+                                <table class="table table-hover" style="margin-top:14px ">
+                                    <tr>
+                                        <th>Planned</th>
+                                        <th>InProgess</th>
+                                        <th>Closed</th>
+                                        <th>Delay</th>
+
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>0</td>
+
+                                    </tr>
+
+                                </table>
+
+                            </div>
+                        </div>
+                        <br>
+                        <!-- /.row -->
+                        <!-- Main row -->
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="box">
+                                    <div class="box-header">
+                                        <h3 class="box-title">All Tasks</h3>
+
+                                        <div class="box-tools">
+                                            <div class="input-group input-group-sm" style="width: 150px;">
+
+
+
+                                            </div>
                                         </div>
                                     </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body table-responsive no-padding" style="text-align:center">
+                                        <table class="table table-hover">
+                                            <tr>
+                                                <th style="text-align:center">ID</th>
+                                                <th style="text-align:center">Task</th>
+                                                <th style="text-align:center">Assigned</th>
+                                                <th style="text-align:center">Date</th>
+                                                <th style="text-align:center">Status</th>
+                                                <th style="text-align:center">Description</th>
+                                            </tr>
+                                            <tr>
+                                                <td>P0101</td>
+                                                <td>P0101-Thiết kế sơ lược cấu trúc trang web (6h) - Khoa </td>
+                                                <td>Khoa Pham</td>
+                                                <td>11-09-2018</td>
+                                                <td><span class="label label-success">Approved</span></td>
+                                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>219</td>
+                                                <td>Lập trình</td>
+                                                <td>Alexander Pierce</td>
+                                                <td>11-7-2014</td>
+                                                <td><span class="label label-warning">Pending</span></td>
+                                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>657</td>
+                                                <td>Lập trình</td>
+                                                <td>Bob Doe</td>
+                                                <td>11-7-2014</td>
+                                                <td><span class="label label-primary">Approved</span></td>
+                                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            </tr>
+                                            <tr>
+                                                <td>175</td>
+                                                <td>Lập trình</td>
+                                                <td>Mike Doe</td>
+                                                <td>11-7-2014</td>
+                                                <td><span class="label label-danger">Denied</span></td>
+                                                <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!-- /.box-body -->
                                 </div>
-                                <!-- /.box-header -->
-                                <div class="box-body table-responsive no-padding" style="text-align:center">
-                                    <table class="table table-hover">
-                                        <tr>
-                                            <th style="text-align:center">ID</th>
-                                            <th style="text-align:center">Task</th>
-                                            <th style="text-align:center">Assigned</th>
-                                            <th style="text-align:center">Date</th>
-                                            <th style="text-align:center">Status</th>
-                                            <th style="text-align:center">Description</th>
-                                        </tr>
-                                        <tr>
-                                            <td>P0101</td>
-                                            <td>P0101-Thiết kế sơ lược cấu trúc trang web (6h) - Khoa </td>
-                                            <td>Khoa Pham</td>
-                                            <td>11-09-2018</td>
-                                            <td><span class="label label-success">Approved</span></td>
-                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>219</td>
-                                            <td>Lập trình</td>
-                                            <td>Alexander Pierce</td>
-                                            <td>11-7-2014</td>
-                                            <td><span class="label label-warning">Pending</span></td>
-                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>657</td>
-                                            <td>Lập trình</td>
-                                            <td>Bob Doe</td>
-                                            <td>11-7-2014</td>
-                                            <td><span class="label label-primary">Approved</span></td>
-                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        </tr>
-                                        <tr>
-                                            <td>175</td>
-                                            <td>Lập trình</td>
-                                            <td>Mike Doe</td>
-                                            <td>11-7-2014</td>
-                                            <td><span class="label label-danger">Denied</span></td>
-                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <!-- /.box-body -->
+                                <!-- /.box -->
                             </div>
-                            <!-- /.box -->
                         </div>
-                    </div>
 
-                    <!-- /.row (main row) -->
+                        <!-- /.row (main row) -->
 
-                </section>
+</section>
                 <!-- /.content -->
             </div>
             <!-- /.content-wrapper -->

@@ -5858,6 +5858,9 @@
     <Content Include="area\documentation\index.html" />
     <Content Include="area\documentation\style.css" />
     <Content Include="area\Gruntfile.js" />
+    <Content Include="area\material-design-iconic-font\css\material-design-iconic-font.css" />
+    <Content Include="area\material-design-iconic-font\css\material-design-iconic-font.min.css" />
+    <Content Include="area\material-design-iconic-font\css\materialdesignicons.min.css" />
     <Content Include="area\pages\calendar.html" />
     <Content Include="area\pages\charts\chartjs.html" />
     <Content Include="area\pages\charts\flot.html" />
@@ -7595,6 +7598,16 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="area\material-design-iconic-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="area\material-design-iconic-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="area\material-design-iconic-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="area\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="area\material-design-iconic-font\fonts\Material-Design-Iconic-Font.woff2" />
+    <Content Include="area\material-design-iconic-font\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="area\material-design-iconic-font\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="area\material-design-iconic-font\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="area\material-design-iconic-font\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="area\material-design-iconic-font\fonts\materialdesignicons-webfont.woff2" />
     <None Include="Properties\PublishProfiles\testscreenteam12 - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\testscreenteam12 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
